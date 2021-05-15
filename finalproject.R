@@ -74,5 +74,3 @@ for(i in 2:1122) {
   ggsave(plot = night_plot, filename = paste(date, ".png"))
   
 }
-
-night_plot = night_plot + geom_boxplot(aes(group = cut_width(time, 0.3))) 
